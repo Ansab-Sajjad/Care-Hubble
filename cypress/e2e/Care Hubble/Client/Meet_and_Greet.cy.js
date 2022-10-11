@@ -4,7 +4,7 @@ import sign_up_data from "../../../fixtures/Care Hubble data/Client data/Client_
 import CP_SetUp_Data from "./Client_Profile_SetUp_Data.cy"
 
 function meet_and_greet_fun(){
-
+ 
 
 
     it("6- Click on find care button.", function(){

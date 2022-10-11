@@ -59,7 +59,7 @@ cy.wait(50000)
 
 verification_Link()
 })
-
+  
 // it("10- Click on 'Next' button",function(){   
 // cy.get('.btn').click({force: true})
 // })
