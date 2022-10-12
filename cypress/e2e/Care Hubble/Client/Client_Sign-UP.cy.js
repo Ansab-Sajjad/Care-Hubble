@@ -3,7 +3,7 @@ import {Homepage_Link,verification_Link} from "../../../fixtures/Care Hubble dat
 import CP_SetUp_Data from "./Client_Profile_SetUp_Data.cy"
 
 
-describe("Let's automate the Care Hubble.", function(){
+function Client_SignUp() {
 
     it('1- Visit to the main Landing page.', function(){
         Homepage_Link()
@@ -486,5 +486,6 @@ it("",function(){
 
 
     
-})
+}
+export default Client_SignUp;
  

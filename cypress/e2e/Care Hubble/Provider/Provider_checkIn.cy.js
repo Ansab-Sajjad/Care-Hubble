@@ -12,7 +12,7 @@ it("Click on the booking.",function(){
 
 
 it("Click on the first booking.",function(){
-    cy.get('tbody > :nth-child(2) > :nth-child(1)').click({force: true}).wait(5000)
+    cy.get('tbody > :nth-child(3) > :nth-child(1)').click({force: true}).wait(5000)
 })
 
 
@@ -105,7 +105,7 @@ it("",function(){
 
 })
 
-it.skip("",function(){
+it("",function(){
     cy.get('#screenedNegative > .modal-dialog > .modal-content > .modal-body > :nth-child(1) > .d-flex > .btn').click({force: true}).wait(2000)
     
 })
