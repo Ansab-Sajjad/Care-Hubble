@@ -9,7 +9,7 @@ function Book_Care_visit()
     })
    
 it("Click on the Wednesday Availability", function(){
-    cy.get('.fc-day-wed > .fc-timegrid-col-frame > :nth-child(2) > .fc-timegrid-event-harness > .fc-timegrid-event').click({force: true}).wait(2000)
+    cy.get('.fc-day-thu > .fc-timegrid-col-frame > :nth-child(2) > .fc-timegrid-event-harness > .fc-timegrid-event').click({force: true}).wait(2000)
 })
    
 it("Click on the Continue button.", function(){

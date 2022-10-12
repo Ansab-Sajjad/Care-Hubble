@@ -1,109 +1,61 @@
 
-function provider_Checkout(){
+function Provider_Check_out(){
 
 
 
 
-it("Click on the booking.",function(){
+it("Click on Check out",function(){
     cy.wait(3000)
-    cy.get(':nth-child(2) > .nav-link > :nth-child(2)').click({force: true}).wait(4000)
-})
-
-
-
-it("Click on the first booking.",function(){
-    cy.get('tbody > :nth-child(1) > :nth-child(1)').click({force: true}).wait(2000)
-})
-
-
-
-it("Click on check in button.",function(){
     cy.get('.ml-auto > .btn').click({force: true}).wait(2000)
-    cy.get(':nth-child(1) > .dropdown-item > .form-group > .custom_radio > label').click({force: true}).wait(2000)
+})
+
+it("Click on End visit report point.",function(){
+    cy.get(':nth-child(1) > .form-group > .form-checkbox > label').click({force: true}).wait(2000)
+})
+
+it("Click on End visit report point.",function(){
+    cy.get(':nth-child(4) > .form-group > .form-checkbox > label').click({force: true}).wait(2000)
+})
+
+
+it("Click on End visit report point.",function(){
+    cy.get(':nth-child(9) > .form-group > .form-checkbox > label').click({force: true}).wait(2000)
+
 })
 
 
 
-it("",function(){
-    cy.get(':nth-child(2) > .mb-16 > :nth-child(1) > .mw-552 > .mt-8 > .d-flex > :nth-child(2) > .custom_radio > label').click({force: true}).wait(2000)
-    cy.get(':nth-child(3) > .mb-16 > :nth-child(1) > .mw-552 > .mt-8 > .d-flex > :nth-child(2) > .custom_radio > label').click({force: true}).wait(2000)
-    cy.get(':nth-child(4) > .mb-16 > :nth-child(1) > .mw-552 > .mt-8 > .d-flex > :nth-child(2) > .custom_radio > label').click({force: true}).wait(2000)
-    cy.get(':nth-child(5) > .mb-16 > :nth-child(1) > .mw-552 > .mt-8 > .d-flex > :nth-child(2) > .custom_radio > label').click({force: true}).wait(2000)
-    cy.get(':nth-child(6) > .mb-16 > :nth-child(1) > .mw-552 > .mt-8 > .d-flex > :nth-child(2) > .custom_radio > label').click({force: true}).wait(2000)
-    cy.get(':nth-child(15) > .form-group > .form-checkbox > label').click({force: true}).wait(2000)
+it("Increase Scale",function(){
+    cy.get(':nth-child(4) > .mt-16 > :nth-child(1) > :nth-child(2) > .mt-50 > .row > .col-md-8 > .d-flex > .right-p > .counter-button').click({force: true}).wait(2000)
+    cy.get(':nth-child(4) > .mt-16 > :nth-child(1) > :nth-child(2) > .mt-50 > .row > .col-md-8 > .d-flex > .right-p > .counter-button').click({force: true}).wait(2000)
+    cy.get(':nth-child(4) > .mt-16 > :nth-child(1) > :nth-child(2) > .mt-50 > .row > .col-md-8 > .d-flex > .right-p > .counter-button').click({force: true}).wait(2000)
 })
 
-it("",function(){
-    cy.get('.toRight > .btn').click({force: true}).wait(2000)
-
+it("Increase Scale",function(){
+    cy.get(':nth-child(5) > .mt-16 > :nth-child(1) > :nth-child(2) > .mt-50 > .row > .col-md-8 > .d-flex > .right-p > .counter-button').click({force: true}).wait(2000)
+    cy.get(':nth-child(5) > .mt-16 > :nth-child(1) > :nth-child(2) > .mt-50 > .row > .col-md-8 > .d-flex > .right-p > .counter-button').click({force: true}).wait(2000)
+    cy.get(':nth-child(5) > .mt-16 > :nth-child(1) > :nth-child(2) > .mt-50 > .row > .col-md-8 > .d-flex > .right-p > .counter-button').click({force: true}).wait(2000)
 })
 
-it("",function(){
-    cy.get('#pass > .modal-dialog > .modal-content > .modal-body > :nth-child(1) > .d-flex > .btn').click({force: true}).wait(2000)
 
-})
-
-it("",function(){
-    cy.get(':nth-child(2) > .mb-16 > :nth-child(1) > .mw-552 > .mt-8 > .d-flex > :nth-child(2) > .custom_radio > label').click({force: true}).wait(2000)
-    cy.get(':nth-child(3) > .mb-16 > :nth-child(1) > .mw-552 > .mt-8 > .d-flex > :nth-child(2) > .custom_radio > label').click({force: true}).wait(2000)
-    cy.get(':nth-child(4) > .mb-16 > :nth-child(1) > .mw-552 > .mt-8 > .d-flex > :nth-child(2) > .custom_radio > label').click({force: true}).wait(2000)
-    cy.get(':nth-child(5) > .mb-16 > :nth-child(1) > .mw-552 > .mt-8 > .d-flex > :nth-child(2) > .custom_radio > label').click({force: true}).wait(2000)
-    cy.get(':nth-child(6) > .mb-16 > :nth-child(1) > .mw-552 > .mt-8 > .d-flex > :nth-child(2) > .custom_radio > label').click({force: true}).wait(2000)
-
-})
-
-it("",function(){
-    cy.get(':nth-child(19) > .form-group > .form-checkbox > label').click({force: true}).wait(2000)
-    cy.get(':nth-child(9) > .mb-16 > :nth-child(1) > .mw-552 > .mt-8 > .d-flex > :nth-child(2) > .custom_radio > label').click({force: true}).wait(2000)
-    cy.get(':nth-child(10) > .mb-16 > :nth-child(1) > .mw-552 > .mt-8 > .d-flex > :nth-child(2) > .custom_radio > label').click({force: true}).wait(2000)
-
-})
-
-it("",function(){
-    cy.get('.toRight > .btn').click({force: true}).wait(2000)
-
-})
-
-it("",function(){
-    cy.get('#screenedNegative > .modal-dialog > .modal-content > .modal-body > :nth-child(1) > .d-flex > .btn').click({force: true}).wait(2000)
+it("Increase Scale",function(){
     
-})
-
-it("",function(){
-    
-})
-
-it("",function(){
-    
-})
-
-it("",function(){
-    
-})
-
-it("",function(){
-    
-})
-
-it("",function(){
-    
-})
-
-it("",function(){
-    
-})
-
-it("",function(){
-    
+    cy.get(':nth-child(6) > .mt-16 > :nth-child(1) > :nth-child(2) > .mt-50 > .row > .col-md-8 > .d-flex > .right-p > .counter-button').click({force: true}).wait(2000)
+    cy.get(':nth-child(6) > .mt-16 > :nth-child(1) > :nth-child(2) > .mt-50 > .row > .col-md-8 > .d-flex > .right-p > .counter-button').click({force: true}).wait(2000)
+    cy.get(':nth-child(6) > .mt-16 > :nth-child(1) > :nth-child(2) > .mt-50 > .row > .col-md-8 > .d-flex > .right-p > .counter-button').click({force: true}).wait(2000)
 })
 
 
+it("Scroll to Buttom.",function(){       
+    cy.scrollTo("bottom")
+    cy.wait(2000)
+         })
 
-it("",function(){
-    
+
+it("Enter Text.",function(){
+    cy.get('textarea').click({force: true}).wait(2000)
+    cy.get('textarea').type("Summarize the activities of the care visit and any symptoms, events, observations, and/or concerns that you wish to document today.")
 })
-
-
 
 it("",function(){
     
@@ -111,4 +63,4 @@ it("",function(){
 
 
 }
-export default provider_Checkout;
+export default Provider_Check_out;
