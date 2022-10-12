@@ -25,30 +25,47 @@ it("Click on check in button.",function(){
 
 
 it("",function(){
-    
+    cy.get(':nth-child(2) > .mb-16 > :nth-child(1) > .mw-552 > .mt-8 > .d-flex > :nth-child(2) > .custom_radio > label').click({force: true}).wait(2000)
+    cy.get(':nth-child(3) > .mb-16 > :nth-child(1) > .mw-552 > .mt-8 > .d-flex > :nth-child(2) > .custom_radio > label').click({force: true}).wait(2000)
+    cy.get(':nth-child(4) > .mb-16 > :nth-child(1) > .mw-552 > .mt-8 > .d-flex > :nth-child(2) > .custom_radio > label').click({force: true}).wait(2000)
+    cy.get(':nth-child(5) > .mb-16 > :nth-child(1) > .mw-552 > .mt-8 > .d-flex > :nth-child(2) > .custom_radio > label').click({force: true}).wait(2000)
+    cy.get(':nth-child(6) > .mb-16 > :nth-child(1) > .mw-552 > .mt-8 > .d-flex > :nth-child(2) > .custom_radio > label').click({force: true}).wait(2000)
+    cy.get(':nth-child(15) > .form-group > .form-checkbox > label').click({force: true}).wait(2000)
 })
 
 it("",function(){
-    
+    cy.get('.toRight > .btn').click({force: true}).wait(2000)
+
 })
 
 it("",function(){
-    
+    cy.get('#pass > .modal-dialog > .modal-content > .modal-body > :nth-child(1) > .d-flex > .btn').click({force: true}).wait(2000)
+
 })
 
 it("",function(){
-    
+    cy.get(':nth-child(2) > .mb-16 > :nth-child(1) > .mw-552 > .mt-8 > .d-flex > :nth-child(2) > .custom_radio > label').click({force: true}).wait(2000)
+    cy.get(':nth-child(3) > .mb-16 > :nth-child(1) > .mw-552 > .mt-8 > .d-flex > :nth-child(2) > .custom_radio > label').click({force: true}).wait(2000)
+    cy.get(':nth-child(4) > .mb-16 > :nth-child(1) > .mw-552 > .mt-8 > .d-flex > :nth-child(2) > .custom_radio > label').click({force: true}).wait(2000)
+    cy.get(':nth-child(5) > .mb-16 > :nth-child(1) > .mw-552 > .mt-8 > .d-flex > :nth-child(2) > .custom_radio > label').click({force: true}).wait(2000)
+    cy.get(':nth-child(6) > .mb-16 > :nth-child(1) > .mw-552 > .mt-8 > .d-flex > :nth-child(2) > .custom_radio > label').click({force: true}).wait(2000)
+
 })
 
 it("",function(){
-    
+    cy.get(':nth-child(19) > .form-group > .form-checkbox > label').click({force: true}).wait(2000)
+    cy.get(':nth-child(9) > .mb-16 > :nth-child(1) > .mw-552 > .mt-8 > .d-flex > :nth-child(2) > .custom_radio > label').click({force: true}).wait(2000)
+    cy.get(':nth-child(10) > .mb-16 > :nth-child(1) > .mw-552 > .mt-8 > .d-flex > :nth-child(2) > .custom_radio > label').click({force: true}).wait(2000)
+
 })
 
 it("",function(){
-    
+    cy.get('.toRight > .btn').click({force: true}).wait(2000)
+
 })
 
 it("",function(){
+    cy.get('#screenedNegative > .modal-dialog > .modal-content > .modal-body > :nth-child(1) > .d-flex > .btn').click({force: true}).wait(2000)
     
 })
 
