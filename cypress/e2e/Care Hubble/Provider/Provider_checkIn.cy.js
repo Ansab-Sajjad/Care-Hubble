@@ -1,21 +1,11 @@
+import Select_Booking from "./Select_Booking.cy"
 
 function provider_Check_In(){
 
 
 
 
-it("Click on the booking.",function(){
-    cy.wait(3000)
-    cy.get(':nth-child(2) > .nav-link > :nth-child(2)').click({force: true}).wait(4000)
-})
-
-
-
-it("Click on the first booking.",function(){
-    cy.get('tbody > :nth-child(3) > :nth-child(1)').click({force: true}).wait(5000)
-})
-
-
+    Select_Booking()
 
 it("Click on check in button.",function(){
     cy.get('.ml-auto > .btn').click({force: true}).wait(5000)
@@ -117,7 +107,6 @@ it("",function(){
 it("",function(){
     cy.wait(5000)
 })
-////////////////////////////////////////////////
 
 
 it("",function(){

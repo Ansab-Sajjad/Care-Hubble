@@ -19,11 +19,11 @@ describe("Let's automate the Care Hubble.", function () {
 
     //    <==================== Meet & Greet ====================>
 
-    // meet_and_greet_fun()
+    meet_and_greet_fun()
 
     //    <==================== Book Care Visit ====================>
 
-    // Book_Care_visit()
+    Book_Care_visit()
     
 
      

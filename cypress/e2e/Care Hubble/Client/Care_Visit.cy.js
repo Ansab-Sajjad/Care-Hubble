@@ -8,12 +8,39 @@ function Book_Care_visit()
         cy.get('.btn-primary').click({force: true}).wait(2000)
     })
    
-it("Click on the Wednesday Availability", function(){
-    cy.get('.fc-day-thu > .fc-timegrid-col-frame > :nth-child(2) > .fc-timegrid-event-harness > .fc-timegrid-event').click({force: true}).wait(2000)
-})
-   
-it("Click on the Continue button.", function(){
+it("Click on the Saturday Availability", function(){
+    cy.get('.fc-day-sat > .fc-timegrid-col-frame > :nth-child(2) > .fc-timegrid-event-harness > .fc-timegrid-event').click({force: true}).wait(2000)
     cy.get('.toRight > .btn').click({force: true}).wait(2000)
+    
+})
+
+it("Friday", function(){
+    cy.get('.fc-day-fri > .fc-timegrid-col-frame > :nth-child(2) > .fc-timegrid-event-harness > .fc-timegrid-event').click({force: true}).wait(2000)
+    cy.get('.toRight > .btn').click({force: true}).wait(2000)
+})
+
+it("Thursday", function(){
+    cy.get('.fc-day-thu > .fc-timegrid-col-frame > :nth-child(2) > .fc-timegrid-event-harness > .fc-timegrid-event').click({force: true}).wait(2000)
+    cy.get('.toRight > .btn').click({force: true}).wait(2000)
+})
+
+it("Wednesday", function(){
+    cy.get('.fc-day-wed > .fc-timegrid-col-frame > :nth-child(2) > .fc-timegrid-event-harness > .fc-timegrid-event').click({force: true}).wait(2000)
+    cy.get('.toRight > .btn').click({force: true}).wait(2000)
+})
+
+it("Tuesday", function(){
+    cy.get('.fc-day-tue > .fc-timegrid-col-frame > :nth-child(2) > .fc-timegrid-event-harness > .fc-timegrid-event').click({force: true}).wait(2000)
+    cy.get('.toRight > .btn').click({force: true}).wait(2000)
+})
+
+it("Monday", function(){
+    cy.get('.fc-day-mon > .fc-timegrid-col-frame > :nth-child(2) > .fc-timegrid-event-harness > .fc-timegrid-event').click({force: true}).wait(2000)
+    cy.get('.toRight > .btn').click({force: true}).wait(2000)
+})
+
+it("Click on the Continue button.", function(){
+    
 })
    
 
@@ -52,14 +79,23 @@ it("Click on the 'View Booking Details' button.", function(){
     cy.get('.mt-40 > .btn').click({force: true}).wait(2000)
 })
        
+it("Scroll up and down...",function(){
+    cy.wait(1000)
+    cy.scrollTo(0, 500)
+    cy.wait(3000)
+    cy.scrollTo(0, 800)
+    cy.scrollTo('bottom')
+    cy.wait(3000)
+    cy.scrollTo('center')
+})
    
-it("", function(){
-    
+it("Click on Visit Log.", function(){
+    cy.get('#horizontal-tabs > :nth-child(2) > .nav-link').click({force: true}).wait(2000)
 })
        
    
-it("", function(){
-      
+it("Scroll to bottom.", function(){
+    cy.scrollTo('bottom')
 })
        
    

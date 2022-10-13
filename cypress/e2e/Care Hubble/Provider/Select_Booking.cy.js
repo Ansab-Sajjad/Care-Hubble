@@ -10,7 +10,7 @@ function Select_Booking(){
     
     
     it("Click on the booking.",function(){
-        cy.get('tbody > :nth-child(2) > :nth-child(1)').click({force: true}).wait(5000)
+        cy.get('tbody > :nth-child(5) > :nth-child(1)').click({force: true}).wait(5000)
     })
     
     
