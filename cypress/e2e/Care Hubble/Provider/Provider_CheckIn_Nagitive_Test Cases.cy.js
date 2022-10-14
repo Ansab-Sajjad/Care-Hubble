@@ -121,11 +121,6 @@ it("Click on answer sheet.",function(){
     cy.get('.pt-2').click({force: true}).wait(2000)
 })
 
-it("",function(){
-    cy.get('#confirmAnswersPositive > .modal-dialog > .modal-content > .modal-body').scrollTo('bottom').wait(2000)
-    cy.get('#confirmAnswersPositive > .modal-dialog > .modal-content > .modal-body').scrollTo('top').wait(2000)
-
-})
 
 it("Click on cross button to cross the popup.",function(){
     cy.get('#confirmAnswersPositive > .modal-dialog > .modal-content > .modal-body > .icon-Cross').click({force: true}).wait(2000)
