@@ -7,6 +7,7 @@ import Early_Checkout from "./Early_checkout.cy"
 import provider_Check_In_With_Test_Cases from "./Provider_CheckIn_Nagitive_Test Cases.cy"
 import Reshedule from "./Rescadule.cy"
 import Direct_Cancel_Visit from "./Direct_Cancel_Visit.cy"
+import Alternate_Checking from "./Alternate_Checking.cy"
 
 
 
@@ -27,6 +28,8 @@ describe("Let's automate the Care Hubble.", function () {
     
     // provider_Check_In_With_Test_Cases()
 
+    Alternate_Checking()
+
     //    <==================== Provider Check_Out ====================>
 
     //  Provider_Check_out() //=> On for Extend & Early Check out.
@@ -41,7 +44,7 @@ describe("Let's automate the Care Hubble.", function () {
 
     //    <==================== Reschedule ====================>
 
-    Reshedule()
+    // Reshedule()
 
     //    <==================== Direct Cancel Care Visit ====================>
 

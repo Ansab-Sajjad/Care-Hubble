@@ -11,19 +11,28 @@ describe("Let's automate the Care Hubble.", function () {
   
     //    <==================== Client Sign-Up ====================>
 
-    // Client_SignUp()
+  
+if(2>=4){
+    
+    Client_SignUp()
 
+}
+else
+{
+    Client_SignIN()
+
+}
     //    <==================== Client Sign In ====================>
 
-    Client_SignIN()
+    // Client_SignIN()
 
     //    <==================== Meet & Greet ====================>
 
-    meet_and_greet_fun()
+    // meet_and_greet_fun()
 
     //    <==================== Book Care Visit ====================>
 
-    Book_Care_visit()
+    // Book_Care_visit()
     
 
      

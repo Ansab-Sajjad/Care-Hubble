@@ -266,7 +266,8 @@ it("Enter Buzzer Number.",function(){
 
 it("Set Time Zone.",function(){
     cy.get('#select2--container').click({force: true}).wait(2000)
-cy.contains("Eastern Time").click({force: true}).wait(5000)
+
+cy.get('[id="select2--results"]').find('li').contains("(UTC-05:00) Eastern Time (US & Canada)").click({force: true}).wait(2000)
 })
 
 it("Enter Full Name.",function(){
@@ -331,21 +332,22 @@ it("Have you been hospitalised in the past year?",function(){
 
 it("How many falls have you had in the past year?",function(){
     cy.get('.col-12 > .form-group > .form-controls > .multiselect').click({force: true}).wait(2000)
+    cy.get('[id="multiselect-options"]').find('li').contains("I rarely fall (1-2 falls)").click({force: true}) 
 })
 
 it("What mobility devices do you use?",function(){
     cy.get(':nth-child(4) > .col-12 > .mb-0 > :nth-child(1) > .form-controls > .non-selected-filter').click({force: true}).wait(2000)
-    cy.get(':nth-child(4) > .col-12 > .mb-0 > :nth-child(1) > .form-controls > .services-box > .row > :nth-child(1)').click({force: true}).wait(2000)
+    cy.get(':nth-child(4) > .col-12 > .mb-0 > :nth-child(1) > .form-controls > .services-box > .row > :nth-child(1) > .form-group > .form-checkbox > label').click({force: true}).wait(2000)
 })
 
 it("What assistive devices do you normally use?",function(){
     cy.get(':nth-child(5) > .col-12 > .mb-0 > :nth-child(1) > .form-controls > .non-selected-filter').click({force: true}).wait(2000)
-    cy.get(':nth-child(4) > .col-12 > .mb-0 > :nth-child(1) > .form-controls > .services-box > .row > :nth-child(1) > .form-group > .form-checkbox > label').click({force: true}).wait(2000)
+    cy.get(':nth-child(5) > .col-12 > .mb-0 > :nth-child(1) > .form-controls > .services-box > .row > :nth-child(1) > .form-group > .form-checkbox > label').click({force: true}).wait(2000)
 })
 
 it("Do you have any cognitive impairments?",function(){
     cy.get(':nth-child(6) > .form-group > .form-controls > :nth-child(1) > .col-md-12 > .mt-10').click({force: true}).wait(2000)
-    cy.get(':nth-child(6) > .form-group > .form-controls > :nth-child(1) > .col-md-12 > .mt-10').type("Abnormal memory loss")
+    cy.get(':nth-child(6) > .form-group > .form-controls > :nth-child(1) > .col-md-12 > .mt-10').type("Abnormal memory loss").type('{enter}').wait(2000)
 })
 
 it("Do you have any health impairments?",function(){
@@ -355,14 +357,15 @@ it("Do you have any health impairments?",function(){
 })
 
 it("Have you ever been told that you have an antibiotic resistant organism?",function(){
-    cy.get(':nth-child(7) > .form-group > .form-controls > :nth-child(1) > .col-md-12 > .mt-10').click({force: true}).wait(2000)
+    cy.get(':nth-child(8) > .d-flex > :nth-child(2) > .custom_radio > label').click({force: true}).wait(2000)
 })
 
 //      ========================> Vaccination <======================== 
 
 
 it("Vaccination - Influenza",function(){
-    cy.get(':nth-child(3) > .form-group > .form-controls > .v3dp__datepicker > .v3dp__input_wrapper > input').click({force: true}).wait(5000)
+    // cy.get(':nth-child(3) > .form-group > .form-controls > .v3dp__datepicker > .v3dp__input_wrapper > input')
+    cy.get(':nth-child(11) > .form-group > .form-controls > .v3dp__datepicker > .v3dp__input_wrapper > input').click({force: true}).wait(5000)
     cy.contains("05").click({force: true}).wait(2000)
 })
                     
@@ -375,14 +378,13 @@ it("COVID-19 Dose Number.",function(){
 
 it("Enter Date.",function(){
     cy.get('.right-icon').click({force: true}).wait(2000)
-    cy.get('.right-icon').type("2022-10-05").type('{enter}')
-    cy.wait(2000)
+    cy.wait(5000)
 })
                     
 
 it("Covid Vaccine type.",function(){
-    cy.get('.multiselect').click({force: true}).wait(2000)
-cy.contains("AstraZeneca").click({force: true}).wait(2000)
+    cy.get(':nth-child(3) > .form-group > .form-controls > .multiselect').click({force: true}).wait(2000)
+    cy.get('[id="multiselect-options"]').find('li').contains("AstraZeneca").click({force: true}).wait(2000)
 })
                     
 
@@ -464,7 +466,7 @@ it("Card-expiry date",function(){
 
 it("Enter card-cvc.",function(){
     cy.get('#card-cvc > .__PrivateStripeElement > iframe').click({force: true}).wait(2000)
-    cy.get('#card-cvc > .__PrivateStripeElement > iframe').type(CP_SetUp_Data.Card_CVC)
+    cy.get('#card-cvc > .__PrivateStripeElement > iframe').type("325").wait(2000)
 
 })
                     
