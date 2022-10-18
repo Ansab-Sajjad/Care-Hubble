@@ -28,7 +28,7 @@ describe("Let's automate the Care Hubble.", function () {
     
     // provider_Check_In_With_Test_Cases()
 
-    Alternate_Checking()
+    // Alternate_Checking()
 
     //    <==================== Provider Check_Out ====================>
 
