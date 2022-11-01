@@ -1,3 +1,5 @@
+/// <reference types="Cypress" />
+
 import Provider_Login from "./Provider_SignIn.cy"
 import Provider_Profile_Setup from "./Provider_ProfileSetup.cy"
 import provider_Check_In from "./Provider_checkIn.cy"
@@ -8,6 +10,7 @@ import provider_Check_In_With_Test_Cases from "./Provider_CheckIn_Nagitive_Test 
 import Reshedule from "./Rescadule.cy"
 import Direct_Cancel_Visit from "./Direct_Cancel_Visit.cy"
 import Alternate_Checking from "./Alternate_Checking.cy"
+import Provider_Notificaitons from "./Notification.cy"
 
 
 
@@ -48,7 +51,11 @@ describe("Let's automate the Care Hubble.", function () {
 
     //    <==================== Direct Cancel Care Visit ====================>
 
-    // Direct_Cancel_Visit() 
+    // Direct_Cancel_Visit()
+
+    //    <==================== Provider Notification ====================>
+
+    Provider_Notificaitons()
 
 
 })
