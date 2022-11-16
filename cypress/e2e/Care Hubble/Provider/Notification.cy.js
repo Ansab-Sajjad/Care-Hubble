@@ -74,11 +74,7 @@ cy.wait(2000)
     cy.scrollTo("top").wait(3000);
   });
 
-  it("", function () {});
-
-  it("", function () {});
-
-  it("", function () {});
+  
 }
 
 export default Provider_Notificaitons;

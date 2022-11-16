@@ -11,6 +11,7 @@ import Reshedule from "./Rescadule.cy"
 import Direct_Cancel_Visit from "./Direct_Cancel_Visit.cy"
 import Alternate_Checking from "./Alternate_Checking.cy"
 import Provider_Notificaitons from "./Notification.cy"
+import { Payments } from "./Payment.cy"
 
 
 
@@ -57,5 +58,8 @@ describe("Let's automate the Care Hubble.", function () {
 
     Provider_Notificaitons()
 
+    //    <==================== Provider Payments ====================>
+
+    Payments()
 
 })
